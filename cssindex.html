@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<body>
+    <h1>CSS de forma básica e simples</h1>
+
+    <h2><strong> Introdução </strong></h2>
+    <p>O CSS <i>(Cascending Style Sheets)</i> descreve como os elementos HTML devem ser exibidos na tela, no papel ou em outras mídias. Ele pode controlar e criar estilos em todos os elementos do HTML, seja de apenas para um elemento ou de vários de uma só vez.
+        O CSS foi desenvolvido em 1996, pelo World Wide Web Consortium, para complementar o HTML, uma vez que este não contém tags para formatação de página, sendo necessária a escrita da marcação para o site. Esse processo se tornou desgastante e caro para desenvolvedores. Por essa razão, uma nova alternativa foi criada.
+
+        O CSS tem a tarefa de separar o conteúdo do site de sua apresentação visual, alterando elementos como cor do texto, fonte e espaçamento entre blocos, assim como todo o aspecto estético de uma página.
+
+        Portanto, o HTML é uma linguagem de marcação, ou seja, a base de um site, enquanto o CSS se encarrega de toda a sua apresentação, que deve ser agradável e atrativa para o usuário.
+    </p>
+    
+    <h2><b>Sintaxe</b></h2>
+    <p>
+        Seletor: é o elemento de desejamos adicionar estilo, podemos utilizar o próprio nome em si, como sua classe ou identificador único
+    </p>
+    <p>
+        Declaração: podemos definir quantas declarações forem necessárias e é compreendida com propriedade: valor da propriedade.<br>
+        Propriedade: nome do estilo que queremos adicionar ao elemento.<br>
+        Valor da propriedade: é o valor que atribuímos para a propriedade.<br>
+        Por exemplo:<br>
+        h1 (Seletor){<br>
+            font-size(propriedade do Seletor): 24px;(valor da propriedade)<br>
+            color: red;<br>
+            height: 100px;<br>
+          }<br>
+    </p>
+    <h3><b>Atributo Class</b></h3>
+    <p>
+        Esse atributo especifica um ou mais nomes de classe para um elemento HTML. Para selecionar elementos com uma classe específica, escreva um carcatere de ponto (.), seguido do nome da classe.
+    </p>
+    <h3><b>Estilo Inline</b></h3>
+    <p>
+        Pode ser usado para aplicar um estilo exclusivo para um único elemento. Para usar estilos in-line, adicione o atributo style ao elementorelevante. <br>
+    
+    </p>
+    <h3><b>Estilo Interno</b></h3>
+    <p>
+        Uma folha de estilos interna pode ser usada se uma única página tiver um estilo exclusivo. São definidos dentro do elemento style, dentro da seção head de uma página HTML:
+        Por exemplo:<br>
+        head<br>
+        style<br>
+            body{<br>
+                background-color: branco<br>
+            }
+        /style<br>
+        /head
+    </p>
+    <h3><b>Estilo Externo</b></h3>
+    <p>
+        Você poderá alterar a aparência de um site em um arquivo com extensão CSS.
+    </p>
+    <h3><b>Color</b></h3>
+    <p>
+        Cores são especiicadas usando nomes de cores pré definidos ou valores RGB, HEX entre outros
+    </p>
+    <h3><b>Background-color</b></h3>
+    <p>
+        Podemos usar as cores pre definidas par alaterar a cor de fundo da página.
+    </p>
+    <h3><b>CSS Border</b></h3>
+    <p>A propriedade CSS border adiciona uma borda ao redor do elemento e corresponde ao agrupamento de outras três propriedades relacionadas:</p><br>
+    <ul>
+        <li><b>border-width:</b> que corresponde ao tamanho da borda</li>
+    </ul>
+    <ul>
+        <li><b>border-style:</b> que define o estilo da borda e é uma informação obrigatória</li>
+    </ul>
+    <ul>
+        <li><b>border-color:</b> para definir a cor da borda</li>
+    </ul>
+
+    <h3><b>Fontes</b></h3>
+    <p>É utilizada a propriedade <b>Font-Family</b></p>
+    <ul>
+        <li><b>Fontes genéricas:</b></li>
+        Arial<br>
+        Verdana<br>
+        Helvetica<br>
+        Calibri<br>
+        Impact<br>
+        Tahoma<br>
+        Trebuchet MS<br>
+    </ul>
+    <ul>
+        <li><b>Fontes do tipo serif:</b></li>
+        Times New Roman<br>
+        Georgia<br>
+        Garamond<br>
+        Cambria<br>
+        Palatino<br>
+        Lucida Bright<br>
+    </ul>
+    <ul>
+        <li><b>Fontes mono espaçadas:</b></li>
+        Couries<br>
+        Couries New<br>
+        Monaco<br>
+        Consolas<br>
+        Lucida Console<br>
+    </ul>
+    <h3><b>Estilos de Fontes</b></h3>
+    <p> É utilizado a propriedade <b>Font-Style</b><br>
+        É usada para especificar o texto em itálico.<br>
+        Possui 3 valores esta propriedade:
+    </p>
+    <ul>
+        <li><b>normal</b></li><br>
+        O texto é mostrado normalmente<br>
+    </ul>
+    <ul>
+        <li><b>itálico</b></li><br>
+        O texto é mostrado em itálico
+    </ul>
+    <ul>
+        <li><b>oblíquo</b></li><br>
+        É semelhante ao itálico, mas menos suportado
+    </ul>
+    <h3><b>Tamanho da Fonte</b></h3>
+    <p> É utilizado a propriedade <b>Font-Size</b><br>
+        Permite gerenciar o tamanho do texto:<br>
+        <ul>
+            <li><b>font-size: 16px;</b></li>
+        </ul>
+        <ul>
+            <li><b>font-size: 1em;</b></li>
+        </ul>
+        <ul>
+            <li><b>font-size: 100%;</b></li>
+        </ul>
+
+        <h3><b>Tamanho da Fonte Responsivo:</b></h3>
+        <p>
+            <b>VW</b>é unidade que significa "largura da janela de visualização". Viewport é o tamanho da janela do navegador. 1vw= 1% da largura da janela de visualiação. <br>
+            Design Responsivo é uma técnica de estruturação HTML e CSS, que consiste em adaptar o site ao browser do usuário sem que seja necessário definir várias folhas de estilos especíificaspara cada resolução, ou seja, é um tipo de design onde o layout fica fluído e variante de acordo com a resolução do usuário.
+        </p>
+        <h3><b>Alinhamento do texto:</b></h3>
+        <p> É utilizado a propriedade <b>text-align</b><br>.
+            É usada para definir o alinhamento horizontal de um texto:<br>
+            <ul>
+                <li>text- align: center</li><br>
+            </ul>
+            <ul>
+                <li>text- align: left</li><br>
+            </ul>
+            <ul>
+                <li>text- align: right</li><br>
+            </ul>
+            <ul>
+                <li>text- align: justify</li><br>
+            </ul>
+
+        <h3><b>Espaço Interno:</b></h3>
+        <p> É utilizado a propriedade <b>Padding</b>.
+        <p>Adiciona um espaçamento entre as bordas e seu conteúdo<br></p><br>
+
+        <h3><b>Espaço Externo:</b></h3>
+        <p> É utilizado a propriedade <b>margin</b>.
+        <p>Adiciona um espaçamento para fora das bordas</p>
+
+       
+
+
+       
+
+
+
+
+
+
+
+        
+
+
+    
+
+
+
+
+    
+</body>
+</html>
